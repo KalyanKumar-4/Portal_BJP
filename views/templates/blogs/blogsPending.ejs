@@ -1,0 +1,24 @@
+<% layout('layout') %>
+    <div class="row mt-4 home">
+        <div class="col-md-3 sidemenu" id="sidemenu">
+            <div class="component">
+                <%- include('../../particles/sidebarBlog.ejs') -%>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav sidemenuMobile" id="sidemenuMobile">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="component">
+                <%- include('../../particles/sidebarBlog.ejs') -%>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-9 col-12 home__content">
+            <div class="card home__blogs mb-5 card_body_dark cardStyle" id="home__blogs">
+                <div class="home__blogsHeader headerMain">
+                    <p>Unapproved Blogs</p>
+                </div>
+                <div class="home__blogsCard blogsCard" id="allBlogsUnapproved">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="application/javascript" src="/js/blogs/blogsUnapproved.js"></script>

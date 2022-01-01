@@ -1,0 +1,25 @@
+<div class="card profile__sidenavigator card_body_dark  cardStyle">
+    <!-- <div class="edit__image"> -->
+    <div class="avatar-upload">
+        <div class="avatar-edit" id="avatarEdit">
+            <input type='file' onchange="imageURL(this)" id="imageUpload" accept=".png, .jpg, .jpeg" />
+            <label for="imageUpload"></label>
+        </div>
+        <div class="avatar-preview">
+            <div id="imagePreview" style="background-image: url(/img/avatar.png);">
+            </div>
+        </div>
+    </div>
+    <!-- <p>
+            <label for="memberAvatar">
+                <input type="file" id="memberAvatar">
+            </label>
+        </p> -->
+    <!-- <p>
+            Change Image
+        </p> -->
+    <!-- </div> -->
+</div>
+<%- include('../molecules/mode.ejs') -%>
+    <%- include('../molecules/otherOptions.ejs') -%>
+        <%- include('../molecules/logout.ejs') -%>

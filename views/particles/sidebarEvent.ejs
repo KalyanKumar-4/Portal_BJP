@@ -1,0 +1,21 @@
+<div class="card home__sidenavigator card_body_dark sidenavigator cardStyle">
+    <div class="home__header header">
+        <p>Events</p>
+    </div>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-link href="/eventsApproved">All Events</a>
+        </li>
+        <li class="nav-item" id="eventsPendingLink">
+            <a class="nav-link" data-link href="/eventsPending">Unapproved Events</a>
+        </li>
+        <li class="nav-item" id="eventsRejectedLink">
+            <a class="nav-link" data-link href="/eventsRejected">Rejected Events</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-link href="/eventsForm">Submit Event</a>
+        </li>
+    </ul>
+</div>
+<%- include('../molecules/mode.ejs') -%>
+    <script type="application/javascript" src="/js/sidebar/sidebarEvents.js"></script>

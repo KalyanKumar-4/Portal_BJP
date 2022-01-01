@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- glide JavaScript -->
+    <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/glide/glide.core.min.css">
+    <link rel="stylesheet" href="/css/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- choosen -->
+    <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+    <!-- google translate -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <title>Welcome to BJP</title>
+</head>
+
+<body onresize="contentMobileView()">
+    <div id="loader-wrapper" class="loader-wrapper loader_dark">
+        <div id="loader"></div>
+        <div class="loader-section section-left loader_dark"></div>
+        <div class="loader-section section-right loader_dark"></div>
+    </div>
+    <!-- fix mobile view navbar -->
+    <div class="mobileViewNav" id="navbarLinks">
+        <ul class="navbarLinksMobile d-flex row justify-content-around" style="margin: 0;">
+            <li class="nav-item">
+                <a class="nav-link" data-link href="/"><i class="fas fa-home"></i><span class="navbarTabs">
+                        Home</span></a>
+            </li>
+            <li class="nav-item" id="privilegesLink">
+                <a class="nav-link" id="privilegeLinkPage" href="/manageMembers" data-link><i
+                        class="fas fa-user-lock"></i>
+                    <span class="navbarTabs"> Privileges</span></a>
+            </li>
+            <li class="nav-item" id="committeesLink">
+                <a class="nav-link" id="committeesLayout" href="#" data-link><i class="fas fa-users"></i>
+                    <span class="navbarTabs"> Committees</span></a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar card_body_dark navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex">
+                <a class="navbar-brand" href="/">
+                    <img class="logoDesktop" src="/img/icons/bjp_logo.png" />
+                    <!-- <img class="logoMobile ml-2" src="/img/icons/bjp-logo.png" /> -->
+                </a>
+            </div>
+            <ul class="navbar-nav navbarLinksDesktop">
+                <li class=" nav-item">
+                    <a class="nav-link" data-link href="/"><i class="fas fa-home"></i><span class="navbarTabs">
+                            Home</span></a>
+                </li>
+                <li class="nav-item" id="privilegesLink">
+                    <a class="nav-link" id="privilegeLinkPage" href="/manageMembers" data-link><i
+                            class="fas fa-user-lock"></i>
+                        <span class="navbarTabs"> Privileges</span></a>
+                </li>
+                <li class="nav-item" id="committeesLink">
+                    <a class="nav-link" id="committeesLayout" href="#" data-link><i class="fas fa-users"></i>
+                        <span class="navbarTabs"> Committees</span></a>
+                </li>
+            </ul>
+            <!-- </div> -->
+            <div class="d-flex">
+                <div class="dropdown">
+                    <!-- notification section is commented  -->
+                    <!-- <span class="navEndIcon" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="icon_img" src="/img/icons/notification.png">
+                    </span>
+                    <div class="dropdown-menu cardStyle" aria-labelledby="dropdownMenuButton">
+                        <div class="home__header header">
+                            <p>Notifications <span>(15 New)</span></p>
+                        </div>
+                        <% for (var i=1; i <=5; i++ ) { %>
+                            <div class="notification__msg">
+                                <a class="dropdown-item" href="#">
+                                    <div class="notification_item d-flex">
+                                        <img class="notification_icon" src="/img/icons/notification_icon.png" alt="">
+                                        <div class="notification_data">
+                                            <p><b>Utkarsh Kumar </b>posted an event that needs your approval.
+                                            </p>
+                                            <div class="notification_time">
+                                                <img src="/img/icons/Time.png" alt="">
+                                                <small><span class="notification_timeItem">15 min</span>
+                                                    ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <% } %>
+                    </div> -->
+                    <span class="navEndIcon">
+                        <a id="profileButton">
+                            <img src="/img/ddp.jpg" alt="profile image" height="40" width="40" class="rounded-circle">
+                        </a>
+                    </span>
+                </div>
+            </div>
+    </nav>
+    <!-- external javascript -->
+    <script type="application/javascript" src="/js/main.js"></script>
+    <div class="container mainContainer">
+        <%- body -%>
+            <!-- fix theme mode, verification team, search bars, add scrollbar, manage committee, manage admins -->
+            <span class="burgerMobileButton" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <script type="application/javascript" src="/js/index.js"></script> -->
+    <!-- <script type="application/javascript" src="/js/mainTest.js"></script> -->
+    <script>
+        let memberDetailsLayout = JSON.parse(getCookie('member_profile'));
+        if (!memberDetailsLayout.father_name) {
+            $('#committeesLink').css('display', 'none');
+            $('#privilegesLink').css('display', 'none');
+        } else {
+            if (memberDetailsLayout.committee) {
+                $('#committeesLink').css('display', 'block');
+                let committeeIDLayout = memberDetailsLayout.committee.id;
+                $('#committeesLink a').attr('href', `/committeeClicked/${committeeIDLayout}`);
+
+            } else {
+                $('#committeesLink').css('display', 'none');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
